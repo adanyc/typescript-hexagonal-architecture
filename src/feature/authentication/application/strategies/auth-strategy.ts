@@ -1,3 +1,3 @@
-export interface Strategy {
+export interface AuthStrategy {
   login(email: string, password: string): void;
 }
