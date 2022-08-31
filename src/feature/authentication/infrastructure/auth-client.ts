@@ -10,8 +10,8 @@ const authMap = {
 }
 
 export class AuthClient {
-  login(payload: { email: string, password: string }) {
+  login(auth: string, payload: { username: string, password: string }) {
     const login = new Login();
-    login.run(authMap.azure(), payload);
+    login.run(authMap[auth](), payload);
   }
 }

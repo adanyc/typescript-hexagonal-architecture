@@ -8,7 +8,7 @@ export class AuthAzureStrategy implements AuthStrategy {
     this.authRepository = authRepository;
   }
 
-  login(email: string, password: string): void {
-    this.authRepository.login(email, password);
+  login(username: string, password: string): void {
+    this.authRepository.login(username, password);
   }
 }

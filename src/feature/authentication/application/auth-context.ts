@@ -11,7 +11,7 @@ export class AuthContext {
     this.authStrategy = authStrategy;
   }
 
-  login(email: string, password: string) {
-    return this.authStrategy.login(email, password);
+  login(username: string, password: string) {
+    return this.authStrategy.login(username, password);
   };
 }
